@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: #fd4766;
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .gallery {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .upload-form {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .upload-form h2 {
+      color: #1f1f25;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .upload-form input[type="file"] {
+      margin-bottom: 20px;
+    }
+
+    .upload-form button[type="submit"] {
+      background-color: #fd4766;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .upload-form button[type="submit"]:hover {
+      background-color: #ff6384;
+    }
+
+    footer {
+      background: #1d1d24;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="C:\Users\shres\OneDrive\Desktop\IT website\about.html">About</a></li>
+        <li><a href="C:\Users\shres\OneDrive\Desktop\IT website\service.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Portfolio</a></li>
+        <li><a href="C:\Users\shres\OneDrive\Desktop\IT website\contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="gallery">
+    <!-- Placeholder images -->
+    <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-346529.jpg&fm=jpg" alt="Image 1" width="300">
+    <img src="https://i1.adis.ws/i/canon/get-inspired-abstract-portrait-photography-2_7bafce1ecb724062b2aceefc6a29809d?$media-collection-full-dt-jpg$" alt="Image 2" width="300">
+    <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?cs=srgb&dl=pexels-pixabay-47547.jpg&fm=jpg" alt="Image 3" width="300">
+    <img src="https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/4:3/w_2663,h_1997,c_limit/shouts-animals-watch-baby-hemingway.jpg" alt="Image 4"width="300">
+    <img src="https://media.wired.com/photos/593261cab8eb31692072f129/master/pass/85120553.jpg" alt="Image 5" width="300">
+    <img src="https://imageio.forbes.com/specials-images/imageserve/5faad4255239c9448d6c7bcd/Best-Animal-Photos-Contest--Close-Up-Of-baby-monkey/960x0.jpg?format=jpg&width=960" alt="Image 6"width="300">
+  </section>
+
+  <section class="upload-form">
+    <h2>Upload Photos</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <input type="file" name="photos[]" multiple required>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; copyrighted. address: Kathmandu, Nepal email:info@gmail.com</p>
+  </footer>
+</body>
+</html>
